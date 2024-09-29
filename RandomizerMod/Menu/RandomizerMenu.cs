@@ -354,17 +354,17 @@ namespace RandomizerMod.Menu
 
         private void MakeMenuElements()
         {
-            EntryButton = new BigButton(ModePage, RandomizerMod.SpriteManager.GetSprite("logo"), "Randomizer");
+            EntryButton = new BigButton(ModePage, RandomizerMod.SpriteManager.GetSprite("logo"), "随批冲击！");
             // Start Page
 
-            JumpToJumpPageButton = new SmallButton(StartPage, "More Randomizer Settings");
-            JumpToConnectionsButton = new SmallButton(StartPage, "Connections");
+            JumpToJumpPageButton = new SmallButton(StartPage, "摩多摩多");
+            JumpToConnectionsButton = new SmallButton(StartPage, "联动");
             ToggleCaptionsButton = new ToggleButton(StartPage, "Toggle Menu Captions");
 
-            GenerateButton = new BigButton(StartPage, "Begin Randomization");
-            SeedEntryField = new NumericEntryField<int>(StartPage, "Seed");
+            GenerateButton = new BigButton(StartPage, "开随");
+            SeedEntryField = new NumericEntryField<int>(StartPage, "精子");
 
-            RandomSeedButton = new SmallButton(StartPage, "Random");
+            RandomSeedButton = new SmallButton(StartPage, "你想一个");
 
             // The AdvancedSettingsPage Elements must be constructed before the StartPage preset buttons.
             poolMEF = new MenuElementFactory<PoolSettings>(AdvancedSettingsPage, Settings.PoolSettings);
